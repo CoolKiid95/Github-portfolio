@@ -1,0 +1,49 @@
+
+.back-bg{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 124px;
+  background: linear-gradient(90deg,rgba(87, 25, 46, 1) 0%, rgba(36, 46, 73, 1) 25%, rgba(23, 28, 48, 1) 50%, rgba(36, 46, 73, 1) 75%, rgba(87, 25, 46, 1) 100%);
+  box-shadow: 3px 3px 5px black;
+}
+.navbar-container{
+  width: 1120px;
+  height: 124px;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.labels{
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  align-items: center;
+}
+
+a{
+text-decoration: none;
+font-family:"Bebas Neue", sans-serif;
+font-size: 24px;
+color: white;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translateY(8px)
+        }
+    75%{
+        transform: translateY(-8px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    }
+.bouncy:hover {
+    animation: bounce .4s ease;
+}
+
