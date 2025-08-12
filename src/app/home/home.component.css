@@ -193,3 +193,18 @@ h3{
   display: flex;
   justify-content: space-around;
 }
+.projects-a{
+  z-index: 1111;
+}
+.projects-img{
+  width: 240px;
+  height: 290px;
+  text-shadow: 2px 2px 3px black;
+  border-radius: 10px;
+}
+.projects-video{
+  width: 240px;
+  height: 300px;
+  text-shadow: 2px 2px 3px black;
+  border-radius: 10px;
+}
