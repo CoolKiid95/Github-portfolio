@@ -122,7 +122,7 @@ h3{
 .projects-container{
   margin-top: 100px;
   width: 1200px;
-  height: 500px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,8 +130,8 @@ h3{
 }
 .projects-card{
   position: relative;
-  width: 250px;
-  height: 300px;
+  width: 500px;
+  height: 600px;
   border-radius: 10px;
   z-index: 1111;
   overflow: hidden;
@@ -140,13 +140,14 @@ h3{
   align-items: center;
   justify-content: center;
   box-shadow: 3px 3px 5px black, -3px -3px 5px black;
+  margin: 10px;
 }
 ._bg{
   position: absolute;
   top: 5px;
   left: 5px;
-  width: 240px;
-  height: 290px;
+  width: 480px;
+  height: 580px;
   z-index: 2;
   background: rgba(255,255,255,.75);
   backdrop-filter: blur(24px);
@@ -180,8 +181,8 @@ h3{
   z-index: 1;
   top: 50%;
   left: 50%;
-  width: 240px;
-  height: 290px;
+  width: 480px;
+  height: 580px;
   border-radius: 50%;
   background-color: var(--secondary-color);
   opacity: 1;
@@ -189,22 +190,69 @@ h3{
   animation: light-bounce 5s infinite ease;
 }
 .cardz{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+
+  width: 1200px;
+  column-count: 2;
+  column-gap: 5%;
+
 }
 .projects-a{
   z-index: 1111;
 }
 .projects-img{
-  width: 240px;
-  height: 290px;
+  width: 490px;
+  height: 590px;
   text-shadow: 2px 2px 3px black;
   border-radius: 10px;
 }
 .projects-video{
-  width: 240px;
-  height: 300px;
+  width: 590px;
+  height: 290px;
   text-shadow: 2px 2px 3px black;
+  border-radius: 15px;
+}
+.projects-cardz{
+  position: relative;
+  width: 600px;
+  height: 300px;
   border-radius: 10px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 5px black, -3px -3px 5px black;
+}
+._bgz{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 580px;
+  height: 280px;
+  z-index: 2;
+  background: rgba(255,255,255,.75);
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid rgb(0, 0, 0);
+}
+._lightz{
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 580px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  opacity: 1;
+  filter: blur(12px);
+  animation: light-bounce 5s infinite ease;
+}
+.letswork{
+  color: white;
+  font-family: "Fira Code", monospace;
+  font-size: 30px;
+  margin-top: 20px;
 }
